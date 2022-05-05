@@ -12,7 +12,7 @@ stages:
   - job: Build
     
     pool:
-      vmImage: 'windows-latest'
+      name: 'Default'
 
     variables:
       solution: '**/*.sln'
@@ -57,7 +57,7 @@ stages:
   - job: Deploy
     
     pool:
-      vmImage: 'windows-latest'
+      name: 'Default'
 
     steps:
 
